@@ -1,14 +1,46 @@
+# Ignore macOS system files  
 .DS_*
-*.log
-logs
-**/*.backup.*
-**/*.back.*
-.env
-node_modules
-bower_components
 
-*.sublime*
+# Logs  
+*.log  
+logs/  
+npm-debug.log*  
+yarn-debug.log*  
+yarn-error.log*  
 
-psd
-thumb
-sketch
+# Environment variables (Important for security)  
+.env  
+.env.local  
+.env.development.local  
+.env.test.local  
+.env.production.local  
+
+# Backup files  
+**/*.backup.*  
+**/*.back.*  
+
+# Dependency directories  
+node_modules/  
+bower_components/  
+
+# Ignore Sublime project files  
+*.sublime*  
+
+# Design files (optional, depending on your project)  
+*.psd  
+*.thumb  
+*.sketch  
+
+# Ignore IDE/Editor config files  
+.vscode/  
+.idea/  
+*.swp  
+*.swo  
+
+# Ignore build and cache directories  
+dist/  
+out/  
+.cache/  
+coverage/  
+public/  
+build/  
